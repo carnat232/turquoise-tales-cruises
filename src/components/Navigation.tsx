@@ -27,7 +27,7 @@ const Navigation = () => {
             <Waves className="h-8 w-8 animate-wave" />
             <div className="text-xl font-bold">
               <span className="text-coral">Tropical</span>{' '}
-              <span className="text-ocean-blue">Sud-Est</span>
+              <span className="text-ocean-blue">South-East</span>
             </div>
           </Link>
 

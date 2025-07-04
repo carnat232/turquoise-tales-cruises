@@ -14,7 +14,7 @@ const Footer = () => {
               <Waves className="h-8 w-8 text-turquoise animate-wave" />
               <div className="text-xl font-bold">
                 <span className="text-coral">Tropical</span>{' '}
-                <span className="text-turquoise">Sud-Est</span>
+                <span className="text-turquoise">South-East</span>
               </div>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
@@ -60,7 +60,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            &copy; 2024 Tropical Sud-Est Cruise Company. All rights reserved.
+            &copy; 2024 Tropical South-East Cruise Company. All rights reserved.
           </p>
           <p className="text-coral mt-2 font-medium">
             Book now — the ocean is calling.
