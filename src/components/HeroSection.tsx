@@ -27,6 +27,15 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        {/* Company Logo */}
+        <div className="mb-8">
+          <img 
+            src="/lovable-uploads/89c06748-6e35-4990-a160-47d3f6ef03a8.png" 
+            alt="Tropical South-East Cruise Company Logo" 
+            className="h-32 md:h-40 w-auto mx-auto mb-4"
+          />
+        </div>
+        
         <div className="flex items-center justify-center mb-6">
           <Waves className="h-12 w-12 text-turquoise animate-wave mr-4" />
           <div className="flex items-center space-x-1">
