@@ -16,7 +16,7 @@ const Testimonials = () => {
       name: "Jean-Pierre Martin",
       location: "France",
       rating: 5,
-      text: "Une expérience magnifique! The GRSE Waterfall was breathtaking, and the hospitality of the crew made our day perfect. Highly recommend this cruise to everyone!",
+      text: "A magnificent experience! The GRSE Waterfall was breathtaking, and the hospitality of the crew made our day perfect. Highly recommend this cruise to everyone!",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
     },
     {
