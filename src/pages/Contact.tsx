@@ -96,7 +96,7 @@ const Contact = () => {
                       <Clock className="h-8 w-8 text-turquoise mr-4" />
                       <div>
                         <h3 className="font-bold text-gray-900">Operating Hours</h3>
-                        <p className="text-gray-600">7:00 AM - 6:00 PM</p>
+                        <p className="text-gray-600">Opens 9 AM Sunday</p>
                         <p className="text-sm text-gray-500">Daily (Weather Permitting)</p>
                       </div>
                     </div>
@@ -108,9 +108,9 @@ const Contact = () => {
                     <div className="flex items-center">
                       <MapPin className="h-8 w-8 text-ocean-blue mr-4" />
                       <div>
-                        <h3 className="font-bold text-gray-900">Meeting Point</h3>
-                        <p className="text-gray-600">Southeast Coast, Mauritius</p>
-                        <p className="text-sm text-gray-500">Exact location provided upon booking</p>
+                        <h3 className="font-bold text-gray-900">Our Location</h3>
+                        <p className="text-gray-600">Résidence La Chaux, MU</p>
+                        <p className="text-gray-600">Mahebourg 50823, Mauritius</p>
                       </div>
                     </div>
                   </CardContent>
@@ -242,15 +242,15 @@ const Contact = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Find Us</h2>
             <p className="text-xl text-gray-600">
-              We'll send you the exact meeting location once you book your cruise
+              Visit us at our location in Mahebourg
             </p>
           </div>
           
           <div className="bg-gray-200 rounded-2xl h-96 flex items-center justify-center">
             <div className="text-center text-gray-600">
               <MapPin className="h-16 w-16 mx-auto mb-4 text-coral" />
-              <h3 className="text-xl font-bold mb-2">Southeast Coast, Mauritius</h3>
-              <p>Exact meeting point coordinates will be shared upon booking confirmation</p>
+              <h3 className="text-xl font-bold mb-2">Résidence La Chaux, MU</h3>
+              <p>Mahebourg 50823, Mauritius</p>
             </div>
           </div>
         </div>
