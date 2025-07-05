@@ -56,8 +56,8 @@ const Gallery = () => {
     <div className="min-h-screen bg-gray-50">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-ocean text-white">
+      {/* Hero Section - Changed to sea color background with black text */}
+      <section className="relative py-20 bg-ocean-blue text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Camera className="h-16 w-16 text-coral mx-auto mb-6" />
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
@@ -113,13 +113,13 @@ const Gallery = () => {
         </DialogContent>
       </Dialog>
 
-      {/* Call to Action */}
+      {/* Call to Action - Changed text to black */}
       <section className="py-16 bg-gradient-sunset">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-4xl font-bold text-black mb-6">
             Create Your Own Memories
           </h2>
-          <p className="text-xl text-white/90 mb-8">
+          <p className="text-xl text-black mb-8">
             These could be your photos! Book your cruise today and capture unforgettable moments in paradise.
           </p>
         </div>

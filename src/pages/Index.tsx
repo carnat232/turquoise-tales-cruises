@@ -49,13 +49,13 @@ const Index = () => {
 
       <Testimonials />
       
-      {/* Final CTA */}
+      {/* Final CTA - Changed text to black */}
       <section className="py-20 bg-gradient-sunset">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             The Ocean is Calling
           </h2>
-          <p className="text-xl md:text-2xl text-white/90 mb-8">
+          <p className="text-xl md:text-2xl text-black mb-8">
             Don't just dream about paradise — experience it! Book your unforgettable cruise today.
           </p>
           
@@ -70,7 +70,7 @@ const Index = () => {
             </Button>
           </div>
           
-          <div className="mt-8 text-white/90">
+          <div className="mt-8 text-black">
             <p className="text-lg font-medium">
               ⭐ One day. A lifetime of memories. ⭐
             </p>

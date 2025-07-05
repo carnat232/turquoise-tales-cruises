@@ -41,8 +41,8 @@ const Contact = () => {
     <div className="min-h-screen bg-gray-50">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-ocean text-white">
+      {/* Hero Section - Changed to sea color background with black text */}
+      <section className="relative py-20 bg-ocean-blue text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Phone className="h-16 w-16 text-coral mx-auto mb-6" />
           <h1 className="text-5xl md:text-6xl font-bold mb-6">

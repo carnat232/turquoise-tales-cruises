@@ -103,8 +103,8 @@ const Tours = () => {
     <div className="min-h-screen bg-gray-50">
       <Navigation />
       
-      {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-ocean text-white">
+      {/* Hero Section - Changed to sea color background with black text */}
+      <section className="relative py-20 bg-ocean-blue text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Tour <span className="text-coral">Packages</span>
@@ -197,13 +197,13 @@ const Tours = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* Call to Action - Changed text to black */}
       <section className="py-16 bg-gradient-sunset">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
+          <h2 className="text-4xl font-bold text-black mb-6">
             Ready for Your Adventure?
           </h2>
-          <p className="text-xl text-white/90 mb-8">
+          <p className="text-xl text-black mb-8">
             Don't wait - book your dream cruise today and create memories that will last a lifetime!
           </p>
           <Button 

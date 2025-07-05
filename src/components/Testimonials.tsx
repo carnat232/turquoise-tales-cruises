@@ -10,21 +10,21 @@ const Testimonials = () => {
       location: "United Kingdom",
       rating: 5,
       text: "Absolutely magical experience! The crew was fantastic, the snorkeling was incredible, and the BBQ lunch on Île aux Cerfs was unforgettable. We can't wait to come back!",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?w=150&h=150&fit=crop&crop=face"
+      image: "/lovable-uploads/4e401844-53bb-403e-9771-052c2757d06b.png"
     },
     {
       name: "Jean-Pierre Martin",
       location: "France",
       rating: 5,
       text: "A magnificent experience! The GRSE Waterfall was breathtaking, and the hospitality of the crew made our day perfect. Highly recommend this cruise to everyone!",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+      image: "/lovable-uploads/3607b8bc-1775-4ec7-8dd8-adbcdf2b6262.png"
     },
     {
       name: "The Patel Family",
       location: "South Africa",
       rating: 5,
       text: "Perfect family adventure! Our kids loved the snorkeling, and we adults enjoyed the beautiful scenery and delicious food. The best day of our Mauritius vacation!",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+      image: "/lovable-uploads/6417fd17-0ca9-427b-bd85-ab9612d2abbd.png"
     }
   ];
 
