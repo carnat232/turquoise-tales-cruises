@@ -35,7 +35,7 @@ const Tours = () => {
       price: "From $60 per person",
       duration: "Half Day (5 hours)",
       capacity: "Up to 15 guests",
-      image: "/lovable-uploads/26257f01-6512-47a5-a7f7-856a0b160c59.png",
+      image: "/lovable-uploads/f557d798-4d22-464d-8ae0-73cb4d286d3d.png",
       highlights: [
         "Premium snorkeling spots",
         "Île aux Cerfs beach time",
@@ -56,7 +56,7 @@ const Tours = () => {
       price: "From $90 per couple",
       duration: "3 hours",
       capacity: "Up to 8 guests",
-      image: "/lovable-uploads/f557d798-4d22-464d-8ae0-73cb4d286d3d.png",
+      image: "/lovable-uploads/26257f01-6512-47a5-a7f7-856a0b160c59.png",
       highlights: [
         "Stunning sunset views",
         "Romantic atmosphere",
@@ -103,8 +103,8 @@ const Tours = () => {
     <div className="min-h-screen bg-gray-50">
       <Navigation />
       
-      {/* Hero Section - Changed to sea color background with black text */}
-      <section className="relative py-20 bg-ocean-blue text-black">
+      {/* Hero Section - Changed text to white */}
+      <section className="relative py-20 bg-ocean-blue text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Tour <span className="text-coral">Packages</span>
