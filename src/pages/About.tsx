@@ -12,7 +12,7 @@ const About = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-ocean text-white">
+      <section className="relative py-20 bg-ocean-blue text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             About <span className="text-coral">Our Story</span>
