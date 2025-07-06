@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
-import { Phone, MapPin, Clock, Star } from 'lucide-react';
+import { Phone, MapPin, Clock, Star, Mail } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -93,6 +93,18 @@ const Contact = () => {
                 <Card className="hover:shadow-lg transition-shadow duration-300">
                   <CardContent className="p-6">
                     <div className="flex items-center">
+                      <Mail className="h-8 w-8 text-turquoise mr-4" />
+                      <div>
+                        <h3 className="font-bold text-gray-900">Email</h3>
+                        <p className="text-gray-600">jeremy.keisler123@gmail.com</p>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                <Card className="hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-6">
+                    <div className="flex items-center">
                       <Clock className="h-8 w-8 text-turquoise mr-4" />
                       <div>
                         <h3 className="font-bold text-gray-900">Operating Hours</h3>
@@ -109,7 +121,6 @@ const Contact = () => {
                       <MapPin className="h-8 w-8 text-ocean-blue mr-4" />
                       <div>
                         <h3 className="font-bold text-gray-900">Our Location</h3>
-                        <p className="text-gray-600">Résidence La Chaux, MU</p>
                         <p className="text-gray-600">Mahebourg 50823, Mauritius</p>
                       </div>
                     </div>
@@ -249,8 +260,7 @@ const Contact = () => {
           <div className="bg-gray-200 rounded-2xl h-96 flex items-center justify-center">
             <div className="text-center text-gray-600">
               <MapPin className="h-16 w-16 mx-auto mb-4 text-coral" />
-              <h3 className="text-xl font-bold mb-2">Résidence La Chaux, MU</h3>
-              <p>Mahebourg 50823, Mauritius</p>
+              <h3 className="text-xl font-bold mb-2">Mahebourg 50823, Mauritius</h3>
             </div>
           </div>
         </div>
