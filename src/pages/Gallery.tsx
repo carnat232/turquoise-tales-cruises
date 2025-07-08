@@ -31,6 +31,56 @@ const Gallery = () => {
       description: "Sunset at Île aux Cerfs"
     },
     {
+      src: "/lovable-uploads/4e79dc9b-1279-416e-a8e7-8f568eb12726.png",
+      title: "River Adventure",
+      description: "Peaceful river cruise through lush greenery"
+    },
+    {
+      src: "/lovable-uploads/0faf0c3b-cb69-41be-b62b-dd9ccf79c534.png",
+      title: "Historic Lighthouse",
+      description: "Iconic lighthouse on a tropical island"
+    },
+    {
+      src: "/lovable-uploads/7a4741b5-58af-4f1a-8e7c-002e11ae3f74.png",
+      title: "Our Cruise Boat",
+      description: "Comfortable and safe vessel for your adventure"
+    },
+    {
+      src: "/lovable-uploads/6fd919a9-02ff-4930-9ebe-51cc77f30d66.png",
+      title: "Pristine Beach",
+      description: "Untouched white sand beaches"
+    },
+    {
+      src: "/lovable-uploads/7421c7cb-4b94-4417-90c0-d53df91252d1.png",
+      title: "Happy Guests",
+      description: "Creating unforgettable memories together"
+    },
+    {
+      src: "/lovable-uploads/8ea3d0d4-f88c-48a2-b7e2-9e0501ae79eb.png",
+      title: "Aerial Paradise",
+      description: "Stunning aerial view of tropical lagoon"
+    },
+    {
+      src: "/lovable-uploads/b3828c77-4c78-45be-ac0c-406769fb33bd.png",
+      title: "Sandbank Island",
+      description: "Remote sandbank in crystal clear waters"
+    },
+    {
+      src: "/lovable-uploads/f86e0e2a-b758-4483-a3f0-eec0dbe73bf4.png",
+      title: "Marine Wildlife",
+      description: "Incredible whale and dolphin encounters"
+    },
+    {
+      src: "/lovable-uploads/a1e3214f-eb3b-4581-a79e-752ad73547a5.png",
+      title: "Sea Turtle",
+      description: "Amazing underwater wildlife experiences"
+    },
+    {
+      src: "/lovable-uploads/52c8a7df-0b63-4a21-8888-375a87557b6c.png",
+      title: "Coastal Views",
+      description: "Dramatic coastline and island formations"
+    },
+    {
       src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800&h=600&fit=crop",
       title: "Ocean Waves",
       description: "The rhythm of the Indian Ocean"
@@ -39,16 +89,6 @@ const Gallery = () => {
       src: "https://images.unsplash.com/photo-1518877593221-1f28583780b4?w=800&h=600&fit=crop",
       title: "Marine Life",
       description: "Incredible underwater adventures"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=600&fit=crop",
-      title: "Tropical Paradise",
-      description: "Surrounded by nature's beauty"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=800&h=600&fit=crop",
-      title: "Mountain Views",
-      description: "Stunning landscapes from the water"
     }
   ];
 
