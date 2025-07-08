@@ -29,10 +29,10 @@ const VideoSection = () => {
     <section className="py-20 bg-gradient-to-br from-ocean-blue to-turquoise">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Experience Our <span className="text-coral">Adventures</span>
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Watch the magic of Mauritius come alive through our cruise adventures
           </p>
         </div>
@@ -41,10 +41,10 @@ const VideoSection = () => {
         <div className="mb-12 text-center">
           <label htmlFor="video-upload" className="cursor-pointer">
             <div className="inline-flex items-center gap-3 bg-white/20 backdrop-blur-sm border-2 border-dashed border-white/40 rounded-lg px-8 py-6 hover:bg-white/30 transition-all duration-300">
-              <Upload className="h-8 w-8 text-white" />
-              <div className="text-white">
+              <Upload className="h-8 w-8 text-black" />
+              <div className="text-black">
                 <div className="text-lg font-semibold">Upload Videos</div>
-                <div className="text-sm text-white/80">Click to select video files</div>
+                <div className="text-sm text-black/80">Click to select video files</div>
               </div>
             </div>
           </label>
@@ -58,9 +58,9 @@ const VideoSection = () => {
           />
         </div>
 
-        {/* Video Grid */}
+        {/* Video Grid - Changed to 2 columns */}
         {videos.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {videos.map((videoUrl, index) => (
               <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 overflow-hidden">
                 <CardContent className="p-0 relative group">
@@ -113,7 +113,7 @@ const VideoSection = () => {
         )}
 
         {videos.length === 0 && (
-          <div className="text-center text-white/80">
+          <div className="text-center text-black">
             <p className="text-lg">No videos uploaded yet. Upload some videos to showcase your cruise adventures!</p>
           </div>
         )}
