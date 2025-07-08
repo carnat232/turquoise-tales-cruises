@@ -81,6 +81,56 @@ const Gallery = () => {
       description: "Dramatic coastline and island formations"
     },
     {
+      src: "/lovable-uploads/a840fe10-6859-4e04-ae65-dc26d58ed984.png",
+      title: "Swimming with Turtles",
+      description: "Magical underwater encounters with sea turtles"
+    },
+    {
+      src: "/lovable-uploads/5a3dfad9-5a36-4b8f-a1e4-2657e0b70e32.png",
+      title: "Paradise Sandbank",
+      description: "Exclusive access to pristine white sand beaches"
+    },
+    {
+      src: "/lovable-uploads/3de784e9-9358-41a2-8982-d8354097aac5.png",
+      title: "Crystal Rock Formation",
+      description: "Iconic natural rock formations in turquoise waters"
+    },
+    {
+      src: "/lovable-uploads/6c3fdc3d-f017-4361-a401-330e5c74778e.png",
+      title: "Aerial Island View",
+      description: "Breathtaking bird's eye view of tropical paradise"
+    },
+    {
+      src: "/lovable-uploads/6482c02e-a7e1-4b83-bf0d-5578a64cbc4f.png",
+      title: "Beach Relaxation",
+      description: "Perfect spot for relaxation and sunbathing"
+    },
+    {
+      src: "/lovable-uploads/5b2d9c77-587b-4219-9bfa-1f8c3ccd54b7.png",
+      title: "Tropical Waterfall",
+      description: "Hidden waterfall accessible by boat"
+    },
+    {
+      src: "/lovable-uploads/758b104d-66f1-4acd-ad82-ed2307bf2f36.png",
+      title: "Whale Watching",
+      description: "Magnificent whales in their natural habitat"
+    },
+    {
+      src: "/lovable-uploads/3a8a0eec-79a3-4756-9400-a7cefe1c7dde.png",
+      title: "Private Beach Setup",
+      description: "Exclusive beach dining experience"
+    },
+    {
+      src: "/lovable-uploads/08589367-9276-465b-965c-9e6fa8ac01cf.png",
+      title: "Island Paradise",
+      description: "Aerial view of untouched tropical island"
+    },
+    {
+      src: "/lovable-uploads/d532fb06-6ff9-4b9a-9d89-2b6905fbacd0.png",
+      title: "Scenic Flight View",
+      description: "Amazing perspective from our scenic flights"
+    },
+    {
       src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=800&h=600&fit=crop",
       title: "Ocean Waves",
       description: "The rhythm of the Indian Ocean"
