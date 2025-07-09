@@ -40,79 +40,79 @@ const VideoSection = () => {
   return (
     <section className="py-20 bg-gradient-to-br from-ocean-blue to-turquoise">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center min-h-[600px]">
           {/* Left side - Text content */}
-          <div className="space-y-6">
+          <div className="space-y-8 lg:pr-8">
             <div className="text-sm font-semibold text-black uppercase tracking-wide">
               WELCOME TO MAURITIUS
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold text-black leading-tight">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight">
               Luxury Seaside
               <br />
               <span className="text-coral">Adventures</span>
             </h2>
-            <p className="text-lg text-black leading-relaxed">
+            <p className="text-lg text-black leading-relaxed max-w-lg">
               Nestled in the pristine Indian Ocean waters, our cruises offer
               an exquisite collection of luxury experiences and unforgettable moments. Our
               beachfront adventures combine elegant design with modern
               comfort, creating the perfect setting for an unforgettable seaside
               getaway.
             </p>
-            <p className="text-lg text-black leading-relaxed">
+            <p className="text-lg text-black leading-relaxed max-w-lg">
               Whether you're seeking a romantic escape, a family vacation, or a
               peaceful retreat, our diverse range of tours caters to
               every preference and need. Each experience is thoughtfully designed to
               provide panoramic sea views and direct beach access.
             </p>
             <Button 
-              className="bg-ocean-blue hover:bg-ocean-blue/90 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2"
+              className="bg-ocean-blue hover:bg-ocean-blue/90 text-white font-semibold px-8 py-4 rounded-lg flex items-center gap-2 text-lg"
             >
-              Learn More <ArrowRight className="h-4 w-4" />
+              Learn More <ArrowRight className="h-5 w-5" />
             </Button>
           </div>
 
           {/* Right side - Image grid */}
-          <div className="relative">
-            <div className="grid grid-cols-2 gap-4 h-[500px]">
-              {/* Top row - 2 images */}
+          <div className="relative h-[600px]">
+            <div className="grid grid-cols-2 gap-4 h-full">
+              {/* Left column - 2 images stacked */}
               <div className="space-y-4">
-                <div className="h-[240px] rounded-2xl overflow-hidden">
+                <div className="h-[288px] rounded-2xl overflow-hidden shadow-lg">
                   <img 
                     src={galleryImages[0].src} 
                     alt={galleryImages[0].title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="h-[240px] rounded-2xl overflow-hidden">
+                <div className="h-[288px] rounded-2xl overflow-hidden shadow-lg">
                   <img 
                     src={galleryImages[1].src} 
                     alt={galleryImages[1].title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </div>
               
-              {/* Right column - different sized images */}
+              {/* Right column - 3 images stacked */}
               <div className="space-y-4">
-                <div className="h-[160px] rounded-2xl overflow-hidden">
+                <div className="h-[184px] rounded-2xl overflow-hidden shadow-lg">
                   <img 
                     src={galleryImages[2].src} 
                     alt={galleryImages[2].title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="h-[160px] rounded-2xl overflow-hidden">
+                <div className="h-[184px] rounded-2xl overflow-hidden shadow-lg">
                   <img 
                     src={galleryImages[3].src} 
                     alt={galleryImages[3].title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <div className="h-[160px] rounded-2xl overflow-hidden">
+                <div className="h-[184px] rounded-2xl overflow-hidden shadow-lg">
                   <img 
                     src={galleryImages[4].src} 
                     alt={galleryImages[4].title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   />
                 </div>
               </div>
