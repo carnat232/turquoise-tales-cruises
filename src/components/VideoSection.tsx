@@ -1,179 +1,124 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Upload, Play, X } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+import { ArrowRight } from 'lucide-react';
 
 const VideoSection = () => {
-  const [videos, setVideos] = useState<{ url: string; name: string; file: File }[]>([]);
-  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
-  const { toast } = useToast();
-
-  const handleVideoUpload = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const files = event.target.files;
-    if (files) {
-      Array.from(files).forEach(file => {
-        if (file.type.startsWith('video/')) {
-          // Check file size (limit to 50MB for better performance)
-          if (file.size > 50 * 1024 * 1024) {
-            toast({
-              title: "File too large",
-              description: `${file.name} is too large. Please use videos under 50MB.`,
-              variant: "destructive"
-            });
-            return;
-          }
-
-          const videoUrl = URL.createObjectURL(file);
-          setVideos(prev => [...prev, { 
-            url: videoUrl, 
-            name: file.name,
-            file: file 
-          }]);
-          
-          toast({
-            title: "Video uploaded",
-            description: `${file.name} has been added to your gallery.`
-          });
-        }
-      });
+  const galleryImages = [
+    {
+      src: "/lovable-uploads/bf74323b-7bf3-4ccb-b5b4-09a3ba93a15e.png",
+      title: "Crystal Clear Lagoon",
+      description: "Perfect turquoise waters of Mauritius"
+    },
+    {
+      src: "/lovable-uploads/26257f01-6512-47a5-a7f7-856a0b160c59.png",
+      title: "Paradise Beach",
+      description: "Sunset at Île aux Cerfs"
+    },
+    {
+      src: "/lovable-uploads/6fd919a9-02ff-4930-9ebe-51cc77f30d66.png",
+      title: "Pristine Beach",
+      description: "Untouched white sand beaches"
+    },
+    {
+      src: "/lovable-uploads/8ea3d0d4-f88c-48a2-b7e2-9e0501ae79eb.png",
+      title: "Aerial Paradise",
+      description: "Stunning aerial view of tropical lagoon"
+    },
+    {
+      src: "/lovable-uploads/5a3dfad9-5a36-4b8f-a1e4-2657e0b70e32.png",
+      title: "Paradise Sandbank",
+      description: "Exclusive access to pristine white sand beaches"
+    },
+    {
+      src: "/lovable-uploads/6482c02e-a7e1-4b83-bf0d-5578a64cbc4f.png",
+      title: "Beach Relaxation",
+      description: "Perfect spot for relaxation and sunbathing"
     }
-    // Reset the input
-    event.target.value = '';
-  };
-
-  const removeVideo = (videoUrl: string) => {
-    setVideos(prev => {
-      const updatedVideos = prev.filter(video => video.url !== videoUrl);
-      // Clean up the blob URL
-      URL.revokeObjectURL(videoUrl);
-      return updatedVideos;
-    });
-    
-    toast({
-      title: "Video removed",
-      description: "Video has been removed from your gallery."
-    });
-  };
-
-  // Clean up blob URLs when component unmounts
-  React.useEffect(() => {
-    return () => {
-      videos.forEach(video => {
-        URL.revokeObjectURL(video.url);
-      });
-    };
-  }, []);
+  ];
 
   return (
     <section className="py-20 bg-gradient-to-br from-ocean-blue to-turquoise">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
-            Experience Our <span className="text-coral">Adventures</span>
-          </h2>
-          <p className="text-xl text-black max-w-3xl mx-auto">
-            Watch the magic of Mauritius come alive through our cruise adventures
-          </p>
-        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left side - Text content */}
+          <div className="space-y-6">
+            <div className="text-sm font-semibold text-black uppercase tracking-wide">
+              WELCOME TO MAURITIUS
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-black leading-tight">
+              Luxury Seaside
+              <br />
+              <span className="text-coral">Adventures</span>
+            </h2>
+            <p className="text-lg text-black leading-relaxed">
+              Nestled in the pristine Indian Ocean waters, our cruises offer
+              an exquisite collection of luxury experiences and unforgettable moments. Our
+              beachfront adventures combine elegant design with modern
+              comfort, creating the perfect setting for an unforgettable seaside
+              getaway.
+            </p>
+            <p className="text-lg text-black leading-relaxed">
+              Whether you're seeking a romantic escape, a family vacation, or a
+              peaceful retreat, our diverse range of tours caters to
+              every preference and need. Each experience is thoughtfully designed to
+              provide panoramic sea views and direct beach access.
+            </p>
+            <Button 
+              className="bg-ocean-blue hover:bg-ocean-blue/90 text-white font-semibold px-6 py-3 rounded-lg flex items-center gap-2"
+            >
+              Learn More <ArrowRight className="h-4 w-4" />
+            </Button>
+          </div>
 
-        {/* Video Upload */}
-        <div className="mb-12 text-center">
-          <label htmlFor="video-upload" className="cursor-pointer">
-            <div className="inline-flex items-center gap-3 bg-white/20 backdrop-blur-sm border-2 border-dashed border-white/40 rounded-lg px-8 py-6 hover:bg-white/30 transition-all duration-300">
-              <Upload className="h-8 w-8 text-black" />
-              <div className="text-black">
-                <div className="text-lg font-semibold">Upload Videos</div>
-                <div className="text-sm text-black/80">Click to select video files (Max 50MB each)</div>
+          {/* Right side - Image grid */}
+          <div className="relative">
+            <div className="grid grid-cols-2 gap-4 h-[500px]">
+              {/* Top row - 2 images */}
+              <div className="space-y-4">
+                <div className="h-[240px] rounded-2xl overflow-hidden">
+                  <img 
+                    src={galleryImages[0].src} 
+                    alt={galleryImages[0].title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="h-[240px] rounded-2xl overflow-hidden">
+                  <img 
+                    src={galleryImages[1].src} 
+                    alt={galleryImages[1].title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </div>
+              
+              {/* Right column - different sized images */}
+              <div className="space-y-4">
+                <div className="h-[160px] rounded-2xl overflow-hidden">
+                  <img 
+                    src={galleryImages[2].src} 
+                    alt={galleryImages[2].title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="h-[160px] rounded-2xl overflow-hidden">
+                  <img 
+                    src={galleryImages[3].src} 
+                    alt={galleryImages[3].title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="h-[160px] rounded-2xl overflow-hidden">
+                  <img 
+                    src={galleryImages[4].src} 
+                    alt={galleryImages[4].title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
             </div>
-          </label>
-          <input
-            id="video-upload"
-            type="file"
-            accept="video/*"
-            multiple
-            onChange={handleVideoUpload}
-            className="hidden"
-          />
+          </div>
         </div>
-
-        {/* Note about video persistence */}
-        {videos.length > 0 && (
-          <div className="mb-8 text-center">
-            <div className="inline-block bg-yellow-100 border border-yellow-300 rounded-lg px-4 py-2">
-              <p className="text-sm text-yellow-800">
-                <strong>Note:</strong> Uploaded videos are stored temporarily. For permanent hosting, consider uploading videos to a video platform and embedding them.
-              </p>
-            </div>
-          </div>
-        )}
-
-        {/* Video Grid - 2 columns */}
-        {videos.length > 0 && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {videos.map((video, index) => (
-              <Card key={index} className="bg-white/10 backdrop-blur-sm border-white/20 overflow-hidden">
-                <CardContent className="p-0 relative group">
-                  <div className="relative aspect-video">
-                    <video
-                      src={video.url}
-                      className="w-full h-full object-cover"
-                      poster=""
-                    />
-                    <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <Button
-                        onClick={() => setSelectedVideo(video.url)}
-                        className="bg-coral hover:bg-coral/90 text-white rounded-full p-4"
-                      >
-                        <Play className="h-6 w-6" />
-                      </Button>
-                    </div>
-                    <Button
-                      onClick={() => removeVideo(video.url)}
-                      className="absolute top-2 right-2 bg-red-500 hover:bg-red-600 text-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      size="sm"
-                    >
-                      <X className="h-4 w-4" />
-                    </Button>
-                  </div>
-                  <div className="p-3 bg-white/5">
-                    <p className="text-sm text-black truncate" title={video.name}>
-                      {video.name}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        )}
-
-        {/* Video Modal */}
-        {selectedVideo && (
-          <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4">
-            <div className="relative max-w-4xl w-full">
-              <Button
-                onClick={() => setSelectedVideo(null)}
-                className="absolute -top-12 right-0 bg-white/20 hover:bg-white/30 text-white rounded-full p-2"
-              >
-                <X className="h-6 w-6" />
-              </Button>
-              <video
-                src={selectedVideo}
-                controls
-                autoPlay
-                className="w-full h-auto rounded-lg"
-              />
-            </div>
-          </div>
-        )}
-
-        {videos.length === 0 && (
-          <div className="text-center text-black">
-            <p className="text-lg">No videos uploaded yet. Upload some videos to showcase your cruise adventures!</p>
-          </div>
-        )}
       </div>
     </section>
   );
